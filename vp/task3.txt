@@ -1,0 +1,22 @@
+using System;
+namespace VariableExample 
+{
+   class Program
+   {
+	static void main(string[] arg)
+	{ 
+	  //declare and initializing age variable
+	  int age; //declaring a variable
+	  age=20; //giving it a value
+	  Console.Writeline("age is:" + age); //print the value
+	}
+    }
+}
+
+
+
+
+
+
+
+
