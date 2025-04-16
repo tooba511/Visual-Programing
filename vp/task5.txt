@@ -1,0 +1,40 @@
+using System;
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Integer (int) min and max values
+            int minInt = int.MinValue;
+            int maxInt = int.MaxValue;
+            Console.WriteLine($"int (Int32) range: {minInt} to {maxInt}");
+
+            // Long (int64) min and max values
+            long minLong = long.MinValue;
+            long maxLong = long.MaxValue;
+            Console.WriteLine($"long (Int64) range: {minLong} to {maxLong}");
+
+            // Double min and max values
+            double minDouble = double.MinValue;
+            double maxDouble = double.MaxValue;
+            Console.WriteLine($"double range: {minDouble} to {maxDouble}");
+
+            string str1 = "apple";
+            string str2= "banana";
+            
+            // Using String.Compare to determine which string comes first in lexicographical order
+            int comparison = String.Compare(str1, str2);
+            string minString = comparison < 0 ? str1 : str2;
+            string maxString = comparison > 0 ? str1 : str2;
+
+            Console.WriteLine($"Between '{str1}' and '{str2}', the 'min' is '{minString}' and 'max' is '{maxString}'");
+
+            Console.WriteLine($"String.Empty (smallest meaningful string): \"{string.Empty}\"");
+
+            Console.WriteLine($"Max string length in theory: {int.MaxValue} characters");
+        }
+    }
+
+
+}
